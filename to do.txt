@@ -1,0 +1,12 @@
+1- ÕİÍÉ áÎÏãÇÊ ÇáÓíÇÍÉ ßÇãáÉ done
+3- ÕİÍÉ áÚÑÖ ÇáÚŞÇÑÇÊ ßÇãáÉ ãÚ áíäß áßá ÚŞÇÑ done
+4- ÕİÍÉ áßá ÚŞÇÑ ãäİÕáÉ done
+5- ÕİÍÉ áßá ÎÏãÉ ãä ÇáÎÏãÇÊ ÇáÇÎÑì  done
+6- rtl style  done
+7- begin laravel structure with pages created  done
+8- begin language for static content  in progress
+9- control panel add data from it 
+10 join data entered with the site
+11 - deploy the site on host 
+
+(check in realestate .more link appaerance)

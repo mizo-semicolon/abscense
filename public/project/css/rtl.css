@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+
+
+
+body {
+    direction: rtl;
+    font-family: 'Cairo' ;
+}
+
+.navbar-fixed-top .navbar-nav > li > a {
+
+    font-family: 'Cairo'
+}
+
+#contact ul {
+    margin-right: -40px;
+    margin-left: 0;
+}
+
+#contact h2 {
+
+    margin-top: 0;
+}
+
+.offer-box .offer-image {
+
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+
+  #jssor_1 {
+      left: auto !important;
+      right:-15px !important
+  } 
+
+  h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Cairo' ;
+  }
+
+  .navbar-toggle {
+
+        float: left;
+        margin-right: 0;
+        margin-left: 15px;
+  }
+
+  .navbar-brand {
+      float:right
+  }
+
+  .selectpicker {
+      right: auto;
+      left:0
+  }
+
+  
+
+
+@media (min-width: 768px) {
+
+    .navbar-header {
+        float: right !important;
+        
+    }
+
+    
+
+    .navbar-right {
+        margin-right: -15px;
+        float: left !important;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .col-sm-6 {
+        float: right;
+    }
+    .col-sm-3 {
+        float: right;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .navbar-brand {
+        
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .navbar-nav {
+        padding-right: 0;
+        padding-left: 15px;
+        float: left;
+        text-align: center;
+    }
+
+}
+
+

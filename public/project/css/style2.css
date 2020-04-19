@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+
+body {
+    
+    font-family: 'Cairo';
+    background-color: #f7f7f7;
+}
+
+
+
+.header-login h1 {
+    
+    text-align: center;
+    color: #529352;
+    font-weight: 600;
+    background-color: gainsboro;
+    width: 50%;
+    margin: 1em auto;
+    padding: 5px;
+    border-radius: 20px;
+    font-size:30px;
+}
+
+.form-login h2 {
+    
+    text-align: center;
+    font-size: 28px;
+    color: #05C1FF;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.form-login .login-form {
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    border: 0.5px solid #c3c1c1;
+    margin-bottom: 4em;
+    border-radius: 15px;
+}
+
+.form-login .login-form input {
+    
+    border-radius: 15px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-bottom: 1em;
+    background-color: #a5a6a7;
+    color: #fff;
+}
+
+
+.form-login .login-form input::placeholder {
+    
+    color:#fff;
+}
+
+.form-login .login-form button {
+    
+    border:none;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #05C1FF;
+    border-radius: 15px;
+    margin-top: 2em;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-login .login-form button:hover {
+    
+    background-color: #a5a6a7;
+    color:#fff;
+    transition: background-color 0.5s ease-in;
+
+}
+
+.form-login h3 {
+    
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.footer .bottom-text {
+    
+    background-color: gainsboro;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header {
+    /*display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #529352;
+    height: 60px!important;
+    overflow: hidden;*/
+}
+
+.header .navbar-inverse {
+    
+    background-color: #529352;
+    border: none;
+    padding-bottom: 0.5em;    
+}
+
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: -3px;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #287728 0%, #529352 100%);
+}
+
+@media screen and (max-width:767px) {
+    
+    #sidebarMenu {
+    
+        width: 100%;
+         z-index: 1000;
+        transform: translateX(100%);
+        top: 20px;
+    }
+    
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover {
+     color: rgba(255, 255, 255, 0.50);
+}
+
+.header input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+.header input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.header .logo {
+    
+    position: absolute;
+    top: 15px;
+    margin-right: 1.8em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .login-info {
+    
+    float:left;
+    position: relative;
+    top: 4px;
+}
+
+.header .login-info img {
+    
+    width:50px;
+    display:inline-block;
+}
+
+.header .login-info span {
+    color:#fff;
+    display:inline-block;
+    margin-left:0.5em;
+}
+
+.header .dropdown-menu {
+    
+    position: static;
+    float:none;
+    padding: 5px 0;
+    margin: 10px 0 0px;
+    text-align: right;
+    background-color: inherit;
+}
+
+.header .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color:inherit;
+}
+
+.header .dropdown-menu > li > a:hover {
+    background-color:inherit;
+}
+
+.header .dropdown {
+    position:relative;
+}
+
+.header .dropdown::before {
+    position: absolute;
+    content: "\f0d7";
+    color: #fff;
+    right: 6px;
+    font-family: FontAwesome;
+}
+
+.stats {
+    
+    
+}
+
+.stats h3 {
+    
+    background-color: #529352;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.stats h3 span {
+    
+    border: 1px solid #cac9c9;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 0.3em;
+}
+
+.stats .stat-box {
+    
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-top: 2em;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.stats .stat-box h3 {
+    
+    background-color: #529352;
+    padding:4px;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.stats .stat-box span {
+    
+    font-size: 20px;
+    display: block;
+    margin-top: 1em;
+    color: #777;
+    font-weight: 600;
+}
+
+
+
+.table-orders {
+    
+    margin-top:2em;
+    background-color: #abccab;
+    font-weight: 600;
+    color: #443d3d;
+}
+
+.table-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ded7d7;
+    color:#777;
+    padding-bottom:1em;
+    margin-bottom:2em;
+}
+
+.add-sales h3 {
+    
+    background-color: #529352;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.add-sales > h4 {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ded7d7;
+    color:#777;
+    padding-bottom:1em;
+    margin-bottom:2em;
+}
+
+.add-sales h3 span {
+    
+    border: 1px solid #cac9c9;
+    border-radius: 50%;
+    padding: 9px;
+    margin-left: 0.3em;
+}
+
+ .breadcrumb {
+    background-color: #529352;
+    color: #bfbaba;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+ .breadcrumb li a {
+    text-decoration:none;
+    color:#fff;
+}
+
+.add-sales .register-sales {
+    
+    padding: 2em;
+    border: 0.5px solid #c3c1c1;
+    border-radius: 15px;
+    background-color:#abccab;
+}
+
+
+.add-sales .register-sales input {
+    
+    margin-bottom:1em;
+    padding: 23px 12px;
+}
+
+.add-sales .register-sales button {
+    
+    border:none;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #529352;
+    border-radius: 15px;
+    margin-top: 2em;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.add-sales .register-sales .customers-list {
+    
+     margin-bottom:1em;
+    padding: 3px 12px;
+}
+
+.add-sales .register-sales input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin-bottom: -0.5em;
+    margin-right: 0.2em;
+    margin-left: 0.5em;
+}
+
+.add-sales .register-sales input[type=checkbox]:not(:checked) {
+    background-image: url(../../images/unchecked.png);
+}
+
+.add-sales .register-sales input[type=checkbox]:checked {
+    background-image: url(../../images/checked.png);
+}
+
+.add-sales .register-sales fieldset {
+    
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid #464040; 
+    margin-bottom:1em;
+}
+
+
+      
+.add-sales .register-sales  legend {
+    
+    margin-bottom:0;
+    padding-bottom:0.5em;
+    border:none;
+    width:inherit;
+}
+
+.add-sales .register-sales .col-sm-offset-2 {
+    
+ margin-right: 16.66666667%;
+    margin-left: 0;
+
+}
+
+.search-stats {
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.search-stats .sales-stats {
+    
+    background-color: #abccab;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.search-stats .sales-stats h4 {
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #443d3d;
+}
+
+
+
+.search-stats .search {
+    
+    background-color: #abccab;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.search form input[type=submit] {
+    display:none;
+}
+
+
+
+
+
+   
+
+
+ 
